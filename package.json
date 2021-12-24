@@ -11,7 +11,8 @@
     "tests:watch": "jest --watch",
     "test": "yarn lint && yarn tests",
     "lint": "eslint --fix src/**/*.ts",
-    "prepack": "yarn clean && yarn build"
+    "prepack": "yarn clean && yarn build",
+    "push":"npm publish --access public  ."
   },
   "repository": {
     "type": "git",
