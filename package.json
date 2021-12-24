@@ -1,8 +1,8 @@
 {
-  "name": "webpack5-virtual-modules",
+  "name": "webpack-virtual-modules5",
   "version": "1.0.0",
-  "description": "webpack5-virtual-modules",
-  "main": "src/index.ts",
+  "description": "webpack-virtual-modules5",
+  "main": "lib/index.js",
   "scripts": {
     "clean": "rm -rf ./lib",
     "build": "tsc -p tsconfig.build.json",
@@ -11,8 +11,7 @@
     "tests:watch": "jest --watch",
     "test": "yarn lint && yarn tests",
     "lint": "eslint --fix src/**/*.ts",
-    "prepack": "yarn clean && yarn build",
-    "push":"npm publish --access public  ."
+    "pubnpm":"npm publish --access public  "
   },
   "repository": {
     "type": "git",
@@ -55,13 +54,9 @@
     "webpack": "^5.3.0"
   },
   "files": [
-    "*.js",
-    "*.d.ts"
+    "/lib",
+    "/examples"
   ],
-  "publishConfig": {
-    "main": "lib/index.js",
-    "types": "lib/index.d.ts"
-  },
   "lint-staged": {
     "*.ts": [
       "eslint --fix -c tslint.json",

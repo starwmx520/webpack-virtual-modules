@@ -10,3 +10,5 @@ dist
 npm-debug.log
 reports
 .idea/*
+.github
+docs
