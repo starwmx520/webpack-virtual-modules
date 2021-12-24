@@ -169,6 +169,15 @@ class VirtualModulesPlugin {
           delete fileWatcher.directoryWatcher._cachedTimeInfoEntries;
           fileWatcher.directoryWatcher.setFileTime(filePath, time, false, false, null);
           fileWatcher.emit('change', time, null);
+        }else if(fileWatcher.files && fileWatcher.files.length && fileWatcher.files[0] == modulePath){
+          if (process.env.DEBUG){
+              // eslint-disable-next-line no-console
+              console.log(this._compiler.name, 'Emit file change:', modulePath, time);
+          }
+          delete fileWatcher.watcher.directoryWatcher._cachedTimeInfoEntries;
+          fileWatcher.watcher.directoryWatcher.setFileTime(filePath, time, false, false, null);
+          fileWatcher.watcher.startTime=time;
+          fileWatcher.watcher.emit('change', time, null);
         }
       }
     }

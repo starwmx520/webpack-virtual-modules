@@ -1,7 +1,7 @@
 {
-  "name": "webpack-virtual-modules",
-  "version": "0.4.3",
-  "description": "Webpack Virtual Modules",
+  "name": "webpack5-virtual-modules",
+  "version": "1.0.0",
+  "description": "webpack5-virtual-modules",
   "main": "src/index.ts",
   "scripts": {
     "clean": "rm -rf ./lib",
@@ -15,20 +15,17 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/sysgears/webpack-virtual-modules.git"
+    "url": "git+https://github.com/starwmx520/webpack-virtual-modules"
   },
   "keywords": [
-    "webpack",
-    "webpack-plugin",
-    "virtual",
-    "modules"
+    "webpack"
   ],
   "author": "SysGears INC",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/sysgears/webpack-virtual-modules/issues"
+    "url": "https://github.com/starwmx520/webpack-virtual-modules/issues"
   },
-  "homepage": "https://github.com/sysgears/webpack-virtual-modules#readme",
+  "homepage": "https://github.com/starwmx520/webpack-virtual-modules/blob/main/README.md",
   "devDependencies": {
     "@babel/core": "^7.4.5",
     "@babel/plugin-proposal-class-properties": "^7.4.4",
